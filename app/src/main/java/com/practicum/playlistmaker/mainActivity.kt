@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
+//
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,10 +13,11 @@ class MainActivity : AppCompatActivity() {
 
 
         //Activity для перехода на экран "Поиск"
+        //
 
         val findButton = findViewById<Button>(R.id.button_find)
         findButton.setOnClickListener {
-            val findIntent=Intent( this, Setting_find::class.java)
+            val findIntent=Intent( this, Settingfind::class.java)
             startActivity(findIntent)
         }
 
@@ -35,8 +36,9 @@ class MainActivity : AppCompatActivity() {
 
         val settingButton = findViewById<Button>(R.id.button_tuning)
         settingButton.setOnClickListener {
-            val settingIntent= Intent (this, Setting_activity::class.java)
+            val settingIntent= Intent (this, Settingactivity::class.java)
             startActivity(settingIntent)
+
         }
 
 
